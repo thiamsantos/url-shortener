@@ -1,12 +1,12 @@
 require './shortener'
 
-shortner = Shortener.new
-puts shortner.shorten("google.com")
-puts shortner.fetch(shortner.shorten("google.com")).inspect
+shortener = Shortener.new
+puts shortener.shorten("google.com")
+puts shortener.fetch(shortener.shorten("google.com")).inspect
 
-hash = shortner.shorten("google.com")
-shortner.fetch(hash)
-shortner.fetch(hash)
-shortner.fetch(hash)
-shortner.fetch(hash)
-puts shortner.fetch(hash).inspect
+hash = shortener.shorten("google.com")
+shortener.fetch(hash)
+shortener.fetch(hash)
+shortener.fetch(hash)
+shortener.fetch(hash)
+puts shortener.fetch(hash).inspect
